@@ -24,10 +24,9 @@ function IngredientsList(props) {
     )
 }
 
-IngredientsList.propTypes = { // imgSrc must be a string and is required
-    ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,  // link must be a string and is required
-    getRecipe: PropTypes.func.isRequired,  // link must be a string and is required
-   
+IngredientsList.propTypes = { 
+    ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
+    getRecipe: PropTypes.func.isRequired, 
 };
 
 export default IngredientsList

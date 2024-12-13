@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
 
-
 const ClaudeRecipe = (props) => {
     return (
         <section >
@@ -18,9 +17,7 @@ const ClaudeRecipe = (props) => {
 
 export default ClaudeRecipe
 
-ClaudeRecipe.propTypes = { // imgSrc must be a string and is required
-    recipe: PropTypes.string.isRequired,  // link must be a string and is required
-    // children: PropTypes.string.isRequired,  // link must be a string and is required
-
+ClaudeRecipe.propTypes = {
+    recipe: PropTypes.string.isRequired,
 };
 

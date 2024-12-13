@@ -1,11 +1,7 @@
-
-
 import { useState } from 'react';
 import IngredientsList from './IngredientsList';
 import ClaudeRecipe from './ClaudeRecipe';
 import { getRecipeFromMistral } from "../../ai"
-
-// import PropTypes from 'prop-types';
 
 const Main = () => {
 
@@ -48,15 +44,5 @@ const Main = () => {
         </main>
     );
 };
-
-// Main.propTypes = {
-//     img: PropTypes.string.isRequired, // imgSrc must be a string and is required
-//     country: PropTypes.string.isRequired,  // link must be a string and is required
-//     googleMapsLink: PropTypes.string.isRequired,  // link must be a string and is required
-//     title: PropTypes.string.isRequired,  // link must be a string and is required
-//     dates: PropTypes.string.isRequired,  // link must be a string and is required
-//     text: PropTypes.string.isRequired,  // link must be a string and is required
-
-// };
 
 export default Main
