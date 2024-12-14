@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  height: 108px;
+  max-height: 108px;
   padding: 24px 16px;
   margin-bottom: 60px;
   background-color: white;
@@ -27,7 +27,7 @@ nav > img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  max-height: 100%;
   gap: 10px;
 }
 
@@ -47,7 +47,7 @@ input {
   padding: 9px 13px;
   flex-grow: 1;
   max-width: 400px;
-  min-width: 150px;
+  min-width: 100px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
 }
@@ -124,7 +124,7 @@ section {
   line-height: 28px;
   font-size: 1.125rem;
   font-weight: 400;
-  width: 594px;
+  max-width: 594px;
 }
 
 .suggested-recipe-container h2 {
@@ -133,6 +133,58 @@ section {
   padding-top: 48px;
 }
 
-.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
   margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 14px 8px;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    margin: 0 15px;
+  }
+
+  .form button {
+    font-size: 12px;
+  }
+
+  .ingredient {
+    padding-right: 120px;
+    padding-top: 30px;
+  }
+
+  ul.ingredients-list {
+    margin-bottom: 35px;
+    padding-right: 165px;
+  }
+
+  .recipe-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 35px;
+    gap: 20px;
+  }
+
+  .recipe-container button {
+    padding: 12px 25px;
+    margin: -16px 0 15px 0;
+  }
+
+  .suggested-recipe-container {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 0 20px;
+  }
+
+  .suggested-recipe-container h2 {
+    padding-right: 244px;
+    padding-top: 35px;
+  }
 }

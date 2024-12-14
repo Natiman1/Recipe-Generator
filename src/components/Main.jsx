@@ -5,13 +5,11 @@ import { getRecipeFromMistral } from "../../ai"
 
 const Main = () => {
 
-    const [ingredients, setIngredients] = useState([
-        "all the main spices", "pasta", "ground beef", "tomato paste"
-    ])
+    const [ingredients, setIngredients] = useState([])
 
     const [recipe, setRecipe] = useState("")
 
-    
+
 
     function addIngredient(event) {
         event.preventDefault(); // Prevent the page from reloading
@@ -35,10 +33,10 @@ const Main = () => {
                 <input type="text" name="ingredient" placeholder='e.g. oregano' />
                 <button>+ Add ingredient</button>
             </form>
-            {ingredients.length > 0 && <IngredientsList 
-             ingredients={ingredients}
-             getRecipe={getRecipe}
-            /> }
+            {ingredients.length > 0 && <IngredientsList
+                ingredients={ingredients}
+                getRecipe={getRecipe}
+            />}
 
             {recipe ? <ClaudeRecipe recipe={recipe} /> : null}
         </main>
