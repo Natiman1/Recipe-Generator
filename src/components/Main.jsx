@@ -14,7 +14,7 @@ const Main = () => {
 
     useEffect(() => {
         if (recipe !== "" && recipeSection.current !== null) {
-            recipeSection.current.scrollIntoView()
+            recipeSection.current.scrollIntoView({ behavior: "smooth" })
         }
     }, [recipe])
 
